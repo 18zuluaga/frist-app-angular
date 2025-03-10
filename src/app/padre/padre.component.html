@@ -1,7 +1,8 @@
 <h1>contar {{ contador }}</h1>
+<p>el mensaje es : {{ mensaje }}</p>
 <app-hijo
   (mensajeenviado)="recibirMensaje($event)"
   (incrementarEnviado)="incrementar()"
   (restarEnviado)="restar()"
+  [datoPadre]="mensajeParaHijo"
 />
-<p>el mensaje es : {{ mensaje }}</p>

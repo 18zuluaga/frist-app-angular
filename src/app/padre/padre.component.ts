@@ -17,6 +17,8 @@ export class PadreComponent {
     this.mensaje = $mensaje;
   }
 
+  mensajeParaHijo: string = 'Desde el padre';
+
   incrementar() {
     this.contador++;
   }

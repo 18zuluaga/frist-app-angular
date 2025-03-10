@@ -13,6 +13,8 @@ export class HijoComponent {
   @Output() mensajeenviado = new EventEmitter<string>();
   mensaje: string = ''
 
+  @Input() datoPadre: string = '';
+
   @Output() incrementarEnviado = new EventEmitter<void>();
   @Output() restarEnviado = new EventEmitter<void>();
 
