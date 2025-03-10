@@ -1,4 +1,6 @@
 
-<p appEstiloHermanos>mi nombre es {{ nombre }}</p>
+<h1 appEstiloHermanos>mi nombre es {{ nombre | miPipePersonalizado}}</h1>
 
 <button (click)="saludar()">saludar mi hermano</button>
+
+<H2>{{date | date: 'short'}}</H2>
