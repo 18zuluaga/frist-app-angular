@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { HijoComponent } from '../hijo/hijo.component';
 import { ServicioFamiliarService } from '../servicio-familiar.service';
+import { EstiloHermanosDirective } from '../estilo-hermanos.directive';
 
 @Component({
   selector: 'app-padre',
   standalone: true,
-  imports: [HijoComponent],
+  imports: [HijoComponent, EstiloHermanosDirective],
   templateUrl: './padre.component.html',
   styleUrl: './padre.component.css',
 })

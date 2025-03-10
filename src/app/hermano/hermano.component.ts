@@ -1,11 +1,12 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ServicioFamiliarService } from '../servicio-familiar.service';
 import { FormsModule } from '@angular/forms';
+import { EstiloHermanosDirective } from '../estilo-hermanos.directive';
 
 @Component({
   selector: 'app-hermano',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, EstiloHermanosDirective],
   templateUrl: './hermano.component.html',
   styleUrl: './hermano.component.css'
 })
